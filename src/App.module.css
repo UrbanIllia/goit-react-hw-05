@@ -1,8 +1,21 @@
 .appContainer {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, #0a0a23, #1b1b4f, #2c2c7a);
-  background-attachment: fixed;
+  /* background: linear-gradient(
+    180deg,
+    #fff8e1,
+    #ffe082,
+    #fff8e1
+  ); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    ),
+    url(./assets/images/3.jpg);
+
+  background-position: center;
+  background-size: cover;
   position: relative;
   overflow: hidden;
 }
@@ -15,12 +28,24 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 1px
-  );
-  background-size: 20px 20px;
-  opacity: 0.3;
-  pointer-events: none; /* Дозволяє клікам проходити крізь псевдоелемент */
-  z-index: -1; /* Ставимо нижче контенту */
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  ); /* Легке затемнення до країв */
+  pointer-events: none;
+  z-index: -1;
+}
+
+.appContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/popcorn.png')
+    repeat; /* Текстура попкорну */
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
 }

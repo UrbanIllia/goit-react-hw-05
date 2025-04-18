@@ -6,13 +6,18 @@
 }
 
 .movieItem {
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
   z-index: 1;
+  background: #1c2526; /* Темний фон */
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .movieItem:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 224, 130, 0.5); /* Жовте сяйво */
 }
 
 .movieLink {
@@ -25,11 +30,13 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Гарантує, що заглушка не спотворюється */
+  object-fit: cover;
 }
 
 .title {
-  color: #e0f7fa;
+  color: #fff8e1;
   text-align: center;
   margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
 }

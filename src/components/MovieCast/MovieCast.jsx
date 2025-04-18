@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCredits } from '../../api/tmdb';
+import noActorPhoto from '../../assets/images/no-photo1.png';
 import css from './MovieCast.module.css';
 
 const MovieCast = () => {
@@ -32,7 +33,7 @@ const MovieCast = () => {
               src={
                 actor.profile_path
                   ? `https://image.tmdb.org/t/p/w200${actor.profile_path}`
-                  : 'https://via.placeholder.com/200x300?text=No+Photo'
+                  : noActorPhoto
               }
               alt={actor.name}
               className={css.actorPhoto}

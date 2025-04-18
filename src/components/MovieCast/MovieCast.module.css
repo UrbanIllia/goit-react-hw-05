@@ -11,6 +11,10 @@
 
 .castItem {
   text-align: center;
+  background: #1c2526;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .actorPhoto {
@@ -20,7 +24,7 @@
 }
 
 .actorName {
-  color: #e0f7fa;
+  color: #fff8e1;
   font-weight: bold;
   margin: 10px 0 5px;
 }
@@ -31,6 +35,6 @@
 }
 
 .error {
-  color: #ff6f61;
+  color: #e63946;
   text-align: center;
 }

@@ -1,5 +1,5 @@
 .moviesWrapper {
-  padding: 80px 20px 20px; /* Збільшуємо верхній відступ */
+  padding: 80px 20px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -9,33 +9,48 @@
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .searchInput {
-  padding: 10px;
+  padding: 12px 20px;
   width: 300px;
-  border: 1px solid #4facfe;
-  border-radius: 5px;
+  border: 2px solid #1c2526;
+  border-radius: 25px; /* Овальний інпут */
   font-size: 16px;
-  background-color: #e0f7fa;
-  color: #0f2027;
+  background-color: #fff8e1;
+  color: #1c2526;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #ffe082;
 }
 
 .searchButton {
-  padding: 10px 20px;
-  background: linear-gradient(90deg, #4facfe, #00c4b4);
-  color: #fff;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, #ffe082, #fff8e1); /* Попкорн-градієнт */
+  color: #1c2526;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%; /* Кругла кнопка */
   cursor: pointer;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .searchButton:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #fff8e1, #ffe082);
 }
 
 .error {
-  color: #ff6f61;
+  color: #e63946;
   text-align: center;
 }
