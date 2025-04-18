@@ -17,7 +17,7 @@
   padding: 12px 20px;
   width: 300px;
   border: 2px solid #1c2526;
-  border-radius: 25px; /* Овальний інпут */
+  border-radius: 25px;
   font-size: 16px;
   background-color: #fff8e1;
   color: #1c2526;
@@ -33,10 +33,10 @@
   padding: 12px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(90deg, #ffe082, #fff8e1); /* Попкорн-градієнт */
+  background: linear-gradient(90deg, #ffe082, #fff8e1);
   color: #1c2526;
   border: none;
-  border-radius: 50%; /* Кругла кнопка */
+  border-radius: 50%;
   cursor: pointer;
   font-size: 16px;
   display: flex;

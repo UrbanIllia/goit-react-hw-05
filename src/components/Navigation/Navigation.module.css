@@ -21,6 +21,7 @@
   border-radius: 25px;
   transition: all 0.3s, transform 0.2s;
   border: 1px solid white;
+  /* margin-left: 10px; */
 }
 
 .navLink:hover {
