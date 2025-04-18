@@ -20,7 +20,6 @@ const MovieList = ({ movies }) => {
                   ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
                   : defaultPoster
               }
-              // '/src/assets/images/no-poster2.png'
               alt={movie.title}
               className={css.poster}
             />
