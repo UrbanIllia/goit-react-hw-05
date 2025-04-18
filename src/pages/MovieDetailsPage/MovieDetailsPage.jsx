@@ -6,6 +6,7 @@ import {
   Outlet,
   NavLink,
 } from 'react-router-dom';
+const defaultPoster = '/src/assets/images/no-poster2.png';
 import { getMovieDetails } from '../../api/tmdb';
 import css from './MovieDetailsPage.module.css';
 
@@ -34,8 +35,8 @@ const MovieDetailsPage = () => {
 
   const posterUrl = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-    : '/src/assets/images/no-poster2.png';
-
+    : defaultPoster;
+  // '/src/assets/images/no-poster2.png';
   return (
     <div className={css.detailsWrapper}>
       <button onClick={() => navigate(backLink)} className={css.backButton}>

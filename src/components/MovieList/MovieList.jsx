@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import css from './MovieList.module.css';
+const defaultPoster = '/src/assets/images/no-poster2.png';
 
 const MovieList = ({ movies }) => {
   const location = useLocation();
@@ -17,8 +18,9 @@ const MovieList = ({ movies }) => {
               src={
                 movie.poster_path
                   ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
-                  : '/src/assets/images/no-poster2.png'
+                  : defaultPoster
               }
+              // '/src/assets/images/no-poster2.png'
               alt={movie.title}
               className={css.poster}
             />
