@@ -1,0 +1,35 @@
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.movieItem {
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.movieItem:hover {
+  transform: scale(1.05);
+}
+
+.movieLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Гарантує, що заглушка не спотворюється */
+}
+
+.title {
+  color: #e0f7fa;
+  text-align: center;
+  margin-top: 10px;
+}

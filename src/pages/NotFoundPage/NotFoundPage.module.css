@@ -1,0 +1,29 @@
+.notFoundWrapper {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.message {
+  color: #e0f7fa;
+  margin-bottom: 20px;
+}
+
+.homeLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #4facfe, #00c4b4);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.homeLink:hover {
+  transform: scale(1.05);
+}

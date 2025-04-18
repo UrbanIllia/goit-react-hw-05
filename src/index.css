@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #e0f7fa;
+}
+.urban {
+  position: absolute;
+  left: 6px;
+  top: 84px;
+  width: 60px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .urban {
+    left: 8px;
+    top: 84px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .urban {
+    left: 4px;
+    top: 84px;
+    width: 100px;
+  }
+}

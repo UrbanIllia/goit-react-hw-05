@@ -1,0 +1,36 @@
+.castWrapper {
+  padding: 20px;
+}
+
+.castList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.castItem {
+  text-align: center;
+}
+
+.actorPhoto {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.actorName {
+  color: #e0f7fa;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.character {
+  color: #b0c4de;
+  font-size: 14px;
+}
+
+.error {
+  color: #ff6f61;
+  text-align: center;
+}

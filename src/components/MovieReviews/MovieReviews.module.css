@@ -1,0 +1,30 @@
+.reviewsWrapper {
+  padding: 20px;
+}
+
+.reviewsList {
+  list-style: none;
+}
+
+.reviewItem {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.author {
+  color: #e0f7fa;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  color: #b0c4de;
+}
+
+.noReviews,
+.error {
+  color: #ff6f61;
+  text-align: center;
+}

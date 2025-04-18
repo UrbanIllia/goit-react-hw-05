@@ -1,0 +1,31 @@
+.navBar {
+  background: linear-gradient(90deg, #0a0a23, #1b1b4f);
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  height: 60px; /* Явна висота */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLink {
+  color: #e0f7fa;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #4facfe;
+}
+
+.navLinkActive {
+  color: #4facfe;
+  font-weight: bold;
+}
