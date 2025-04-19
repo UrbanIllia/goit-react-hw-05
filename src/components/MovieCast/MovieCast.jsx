@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCredits } from '../../api/tmdb';
-import noActorPhoto from '/src/assets/images/no-photo1.png';
+// import noActorPhoto from '/src/assets/images/no-photo1.png';
+import noActorPhoto from '../../assets/images/no-photo1.png';
 import css from './MovieCast.module.css';
 
 const MovieCast = () => {

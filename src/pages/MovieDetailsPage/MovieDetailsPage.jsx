@@ -6,8 +6,8 @@ import {
   Outlet,
   NavLink,
 } from 'react-router-dom';
-// const defaultPoster1 = '/src/assets/images/no-poster2.png';
-import defaultPoster1 from '/src/assets/images/no-poster2.png';
+import defaultPoster1 from '../../assets/images/no-poster2.png';
+// import defaultPoster1 from '/src/assets/images/no-poster2.png';
 import { getMovieDetails } from '../../api/tmdb';
 import css from './MovieDetailsPage.module.css';
 
