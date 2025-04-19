@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import css from './MovieList.module.css';
-const defaultPoster = '/src/assets/images/no-poster2.png';
+// const defaultPoster = '/src/assets/images/no-poster2.png';
+import defaultPoster from '/src/assets/images/no-poster2.png';
 
 const MovieList = ({ movies }) => {
   const location = useLocation();
