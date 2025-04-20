@@ -1,4 +1,4 @@
-.movieList {
+/* .movieList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
@@ -9,7 +9,7 @@
   transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
   z-index: 1;
-  background: #1c2526; /* Темний фон */
+  background: #1c2526;
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -17,7 +17,7 @@
 
 .movieItem:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 224, 130, 0.5); /* Жовте сяйво */
+  box-shadow: 0 0 15px rgba(255, 224, 130, 0.5);
 }
 
 .movieLink {
@@ -39,4 +39,67 @@
   margin-top: 10px;
   font-size: 14px;
   font-weight: 600;
+} */
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.movieItem {
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 1;
+  background: #1c2526;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.movieItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 224, 130, 0.5);
+}
+
+.movieLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.title {
+  color: #fff8e1;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 780px) {
+  .movieList {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }

@@ -10,7 +10,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px rgba(255, 224, 130, 0.5); /* Жовте сяйво */
+  text-shadow: 0 0 10px rgba(255, 224, 130, 0.5);
 }
 
 .error {

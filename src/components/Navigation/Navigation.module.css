@@ -1,5 +1,5 @@
 .navBar {
-  background: #1c2526; /* Темно-сірий */
+  background: #1c2526;
   padding: 15px;
   position: fixed;
   top: 0;
@@ -20,7 +20,6 @@
   border-radius: 25px;
   transition: all 0.3s, transform 0.2s;
   border: 1px solid white;
-  /* margin-left: 10px; */
 }
 
 .navLink:hover {

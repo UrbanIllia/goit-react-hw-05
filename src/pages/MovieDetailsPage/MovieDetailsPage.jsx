@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   useParams,
   useLocation,
@@ -7,7 +7,6 @@ import {
   NavLink,
 } from 'react-router-dom';
 import defaultPoster1 from '../../assets/images/no-poster2.png';
-// import defaultPoster1 from '/src/assets/images/no-poster2.png';
 import { getMovieDetails } from '../../api/tmdb';
 import css from './MovieDetailsPage.module.css';
 
@@ -18,7 +17,7 @@ const MovieDetailsPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const backLink = location.state?.from ?? '/movies';
+  const backLink = useRef(location.state?.from ?? '/movies');
 
   useEffect(() => {
     const fetchMovie = async () => {
@@ -37,10 +36,13 @@ const MovieDetailsPage = () => {
   const posterUrl = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : defaultPoster1;
-  // '/src/assets/images/no-poster2.png';
+
   return (
     <div className={css.detailsWrapper}>
-      <button onClick={() => navigate(backLink)} className={css.backButton}>
+      <button
+        onClick={() => navigate(backLink.current)}
+        className={css.backButton}
+      >
         Go back
       </button>
       {error && <p className={css.error}>{error}</p>}
